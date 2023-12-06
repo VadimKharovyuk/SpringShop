@@ -1,0 +1,14 @@
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      show-sql: true
+  datasource :
+    url:jdbc:postgresql://localhost:5432/vadim
+  username: postgres
+  password: 19111993
+flyway:
+  baseline-on-migrate: true
+
